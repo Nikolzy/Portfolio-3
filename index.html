@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+
+
+	<!--  Sprite SVG  -->
+	<svg style='display: none'>
+
+
+		<symbol id="twitter" viewBox="0 0 543.684 543.684">
+			<g>
+				<path d="M527.657,106.697c-2.681,0.783-5.361,1.512-8.041,2.191c-16.384,4.137-17.89-1.322-6.028-13.366
+					c5.312-5.397,10.006-11.267,14.082-17.607c9.137-14.217,1.212-20.417-14.333-13.776c-5.545,2.369-11.182,4.517-16.897,6.432
+					c-16.017,5.379-38.746-2.735-53.018-11.787c-18.018-11.426-38.495-17.136-61.438-17.136c-32.137,0-59.529,11.334-82.192,33.984
+					c-22.656,22.662-33.99,50.062-33.99,82.191c0,4.394,0.251,8.855,0.747,13.378c0.814,7.362-11.585,12.699-28.317,10.336
+					c-36.194-5.11-70.582-16.077-103.171-32.889c-32.32-16.671-60.845-37.65-85.57-62.938C37.672,73.624,21.687,74.665,17.274,90.98
+					c-2.644,9.78-3.959,19.951-3.959,30.515c0,19.908,4.675,38.372,14.027,55.392c4.651,8.47,10.098,16.138,16.353,22.999
+					c10.521,11.549,8.911,18.25-5.734,14.144c-14.639-4.106-25.367-10.202-25.367-9.804s0,0.722,0,0.722
+					c0,28.048,8.807,52.693,26.432,73.911c10.857,13.072,23.47,23.17,37.834,30.282c15.147,7.503,22.203,11.688,13.733,12.784
+					c-5.11,0.661-10.251,0.991-15.422,0.991c-3.5,0-7.172-0.159-11.003-0.483c-6.059-0.514-7.148,12.111,2.038,26.298
+					c7.301,11.273,16.646,21.193,28.03,29.762c11.579,8.721,24.058,14.981,37.417,18.794c16.255,4.633,19.517,13.073,5.024,21.763
+					c-35.863,21.519-75.551,32.277-119.058,32.277c-4.902,0-9.578-0.11-14.045-0.324c-7.754-0.373-2.552,6.456,12.417,14.296
+					c46.775,24.499,97.43,36.738,151.972,36.738c41.237,0,79.964-6.529,116.176-19.596c36.199-13.066,67.136-30.576,92.791-52.516
+					c25.655-21.94,47.779-47.173,66.365-75.711c18.581-28.537,32.424-58.33,41.543-89.376c9.106-31.053,13.666-62.167,13.666-93.342
+					c0-2.809-0.024-5.331-0.067-7.552c-0.086-4.174,10.955-15.472,23.28-27.032c5.563-5.22,10.869-10.698,15.937-16.444
+					C548.833,107.78,543.882,101.966,527.657,106.697z"/>
+			</g>
+		</symbol>
+
+		<symbol id="vkontakte" viewBox="0 0 532.337 532.337">
+			<g>
+				<path d="M471.998,241.286c7.57-9.786,13.58-17.638,18.018-23.562c31.965-42.498,45.82-69.646,41.574-81.482l-1.666-2.772
+					c-1.107-1.665-3.977-3.194-8.592-4.578c-4.621-1.383-10.533-1.604-17.736-0.691l-79.822,0.563
+					c-1.848-0.184-3.697-0.141-5.545,0.128c-1.848,0.281-3.047,0.563-3.605,0.832c-0.557,0.282-1.016,0.508-1.383,0.692l-1.107,0.832
+					c-0.924,0.551-1.939,1.524-3.047,2.914c-1.109,1.389-2.039,2.999-2.773,4.853c-8.684,22.356-18.568,43.146-29.656,62.363
+					c-6.838,11.457-13.123,21.396-18.844,29.792c-5.729,8.415-10.533,14.603-14.414,18.568c-3.879,3.972-7.393,7.166-10.531,9.56
+					c-3.146,2.411-5.545,3.421-7.203,3.054c-1.666-0.367-3.238-0.734-4.713-1.114c-2.588-1.658-4.67-3.917-6.236-6.787
+					c-1.572-2.857-2.631-6.463-3.189-10.808c-0.551-4.339-0.881-8.084-0.967-11.23c-0.098-3.139-0.049-7.57,0.141-13.305
+					c0.184-5.729,0.275-9.602,0.275-11.64c0-7.014,0.141-14.639,0.418-22.864c0.275-8.219,0.508-14.737,0.691-19.542
+					c0.184-4.798,0.275-9.884,0.275-15.245c0-5.349-0.324-9.56-0.975-12.613c-0.648-3.042-1.621-5.998-2.906-8.868
+					c-1.297-2.858-3.189-5.08-5.686-6.646c-2.496-1.573-5.588-2.815-9.283-3.746c-9.799-2.222-22.271-3.409-37.418-3.604
+					c-34.37-0.355-56.451,1.86-66.243,6.658c-3.88,2.038-7.393,4.804-10.532,8.317c-3.329,4.07-3.788,6.291-1.383,6.646
+					c11.089,1.665,18.936,5.643,23.556,11.922l1.665,3.323c1.291,2.411,2.583,6.659,3.88,12.754c1.292,6.096,2.124,12.84,2.497,20.233
+					c0.924,13.488,0.924,25.031,0,34.646c-0.924,9.614-1.799,17.093-2.631,22.442c-0.833,5.361-2.081,9.7-3.74,13.023
+					c-1.665,3.335-2.772,5.367-3.329,6.107c-0.557,0.734-1.016,1.199-1.383,1.384c-2.405,0.918-4.896,1.383-7.484,1.383
+					c-2.589,0-5.729-1.298-9.425-3.887c-3.697-2.576-7.534-6.138-11.5-10.667c-3.978-4.522-8.452-10.856-13.446-18.99
+					c-4.988-8.121-10.166-17.736-15.521-28.819l-4.431-8.042c-2.772-5.165-6.561-12.699-11.365-22.583s-9.058-19.443-12.748-28.69
+					c-1.481-3.874-3.697-6.83-6.652-8.868l-1.383-0.832c-0.924-0.735-2.405-1.524-4.437-2.351c-2.038-0.832-4.155-1.432-6.377-1.805
+					l-75.943,0.551c-7.76,0-13.023,1.763-15.795,5.275l-1.108,1.659C0.275,136.059,0,137.54,0,139.566
+					c0,2.038,0.557,4.529,1.665,7.479c11.089,26.059,23.146,51.188,36.169,75.386c13.03,24.211,24.346,43.709,33.954,58.489
+					c9.608,14.792,19.4,28.733,29.382,41.854c9.982,13.121,16.585,21.523,19.816,25.214c3.231,3.703,5.771,6.476,7.62,8.317
+					l6.928,6.658c4.431,4.432,10.949,9.743,19.542,15.937c8.592,6.193,18.103,12.289,28.55,18.287
+					c10.435,6.01,22.589,10.899,36.444,14.694c13.856,3.794,27.344,5.317,40.465,4.571h31.874c6.469-0.551,11.363-2.576,14.688-6.096
+					l1.107-1.383c0.734-1.102,1.432-2.815,2.08-5.123c0.643-2.307,0.975-4.853,0.975-7.619c-0.191-7.943,0.416-15.116,1.799-21.481
+					c1.383-6.377,2.955-11.175,4.713-14.418c1.756-3.226,3.738-5.955,5.959-8.177c2.217-2.222,3.783-3.55,4.713-4.015
+					c0.924-0.453,1.666-0.777,2.217-0.973c4.43-1.476,9.65-0.043,15.66,4.296c6.004,4.352,11.641,9.7,16.91,16.077
+					c5.262,6.377,11.59,13.531,18.984,21.481c7.387,7.943,13.855,13.855,19.4,17.735l5.545,3.336
+					c3.695,2.209,8.494,4.241,14.412,6.096c5.912,1.842,11.09,2.307,15.52,1.383l70.955-1.114c7.02,0,12.473-1.15,16.354-3.464
+					c3.879-2.295,6.188-4.853,6.928-7.619c0.734-2.772,0.783-5.899,0.141-9.419c-0.648-3.507-1.297-5.955-1.939-7.338
+					c-0.648-1.383-1.25-2.546-1.807-3.464c-9.24-16.628-26.885-37.051-52.938-61.255l-0.557-0.551l-0.275-0.281l-0.275-0.27H473.4
+					c-11.83-11.273-19.309-18.85-22.449-22.736c-5.727-7.38-7.025-14.865-3.879-22.441
+					C449.275,271.874,457.586,259.769,471.998,241.286z"/>
+			</g>
+		</symbol>
+
+		<symbol id="youtube" viewBox="0 0 556.963 556.963">
+			<g>
+				<path d="M336.604,53.152v122.449c0,10.575,0.826,18.341,2.484,23.311c2.692,7.674,8.807,11.5,18.335,11.5
+					c10.355,0,21.028-6.408,32.008-19.266v17.093h28.287V53.152h-28.281v118.41c-6.218,8.923-12.117,13.366-17.717,13.366
+					c-3.728,0-5.906-2.271-6.524-6.836c-0.208-0.41-0.312-4.045-0.312-10.875V53.152H336.604z"/>
+				<path d="M271.958,210.412c14.296,0,25.276-5.282,32.944-15.845c5.802-7.663,8.703-19.896,8.703-36.677v-54.389
+					c0-16.573-2.901-28.69-8.703-36.359c-7.668-10.575-18.647-15.857-32.944-15.857c-13.886,0-24.762,5.282-32.638,15.857
+					c-5.802,7.675-8.703,19.792-8.703,36.359v54.389c0,16.585,2.901,28.813,8.703,36.677
+					C247.19,205.13,258.071,210.412,271.958,210.412z M258.591,97.902c0-14.291,4.456-21.438,13.366-21.438
+					c8.905,0,13.366,7.148,13.366,21.438v65.27c0,14.511-4.461,21.757-13.366,21.757c-8.911,0-13.366-7.246-13.366-21.757V97.902z"/>
+				<path d="M192.704,208.239v-84.224L230.311,0h-31.702l-21.132,81.745L155.402,0h-32.944c5.802,17.412,12.534,36.788,20.202,58.116
+					c9.737,28.605,16.053,50.563,18.96,65.9v84.218h31.083V208.239z"/>
+				<path d="M482.834,257.034c-9.223-8.28-19.841-13.146-31.854-14.608c-38.127-4.137-95.625-6.218-172.492-6.218
+					c-76.873,0-134.267,2.075-172.186,6.218c-12.228,1.457-22.895,6.328-32.014,14.608c-9.119,8.305-15.128,18.55-18.029,30.777
+					c-5.392,24.039-8.079,60.288-8.079,108.783c0,49.314,2.693,85.569,8.079,108.783c2.692,12.215,8.647,22.472,17.87,30.765
+					c9.217,8.293,19.835,13.054,31.854,14.303c38.122,4.345,95.619,6.518,172.499,6.518c76.873,0,134.371-2.173,172.492-6.518
+					c12.014-1.249,22.583-6.01,31.701-14.303c9.113-8.293,15.123-18.55,18.03-30.765c5.386-24.04,8.078-60.301,8.078-108.783
+					c0-49.315-2.692-85.57-8.078-108.783C498.006,275.584,492.051,265.339,482.834,257.034z M179.649,319.195h-33.256v176.85h-31.078
+					v-176.85H82.684v-29.211h96.972v29.211H179.649z M263.561,496.045h-27.663v-16.794c-11.188,12.638-21.756,18.966-31.702,18.966
+					c-9.535,0-15.539-3.837-18.029-11.499c-1.659-4.976-2.485-12.527-2.485-22.693V342.5h27.663v113.141
+					c0,6.628,0.104,10.257,0.312,10.875c0.624,4.345,2.797,6.518,6.53,6.518c5.594,0,11.5-4.345,17.718-13.054V342.5h27.662v153.545
+					H263.561z M369.235,450.047c0,15.128-0.931,25.483-2.797,31.077c-3.525,11.39-10.876,17.093-22.069,17.093
+					c-9.944,0-19.578-5.703-28.904-17.093v14.921h-27.663V289.984h27.663v67.442c8.904-11.182,18.543-16.781,28.904-16.781
+					c11.188,0,18.544,5.802,22.069,17.399c1.866,5.392,2.797,15.648,2.797,30.777V450.047z M474.285,424.562h-55.631v27.039
+					c0,14.302,4.761,21.438,14.296,21.438c6.836,0,10.979-3.727,12.43-11.181c0.41-2.075,0.624-8.391,0.624-18.966h28.281v4.045
+					c0,10.159-0.208,16.157-0.625,18.029c-0.624,5.601-2.797,11.182-6.523,16.781c-7.46,10.974-18.647,16.476-33.568,16.476
+					c-14.296,0-25.49-5.282-33.568-15.857c-6.01-7.662-9.015-19.67-9.015-36.047v-53.771c0-16.364,2.901-28.384,8.703-36.059
+					c8.078-10.563,19.161-15.845,33.256-15.845c13.88,0,24.865,5.281,32.943,15.845c5.594,7.675,8.391,19.694,8.391,36.059v32.014
+					H474.285z"/>
+				<path d="M432.638,365.811c-9.326,0-13.983,7.051-13.983,21.139v14.303h27.974v-14.303
+					C446.622,372.867,441.965,365.811,432.638,365.811z"/>
+				<path d="M329.455,365.811c-4.768,0-9.431,2.283-13.984,6.849v93.544c4.554,4.565,9.217,6.836,13.984,6.836
+					c8.078,0,12.124-6.934,12.124-20.82v-65.575C341.572,372.757,337.533,365.811,329.455,365.811z"/>
+			</g>
+		</symbol>
+	
+		<symbol id="linkedin" viewBox="0 0 552.77 552.77">
+			<g>
+				<path d="M17.95,528.854h71.861c9.914,0,17.95-8.037,17.95-17.951V196.8c0-9.915-8.036-17.95-17.95-17.95H17.95
+					C8.035,178.85,0,186.885,0,196.8v314.103C0,520.816,8.035,528.854,17.95,528.854z"/>
+				<path d="M17.95,123.629h71.861c9.914,0,17.95-8.036,17.95-17.95V41.866c0-9.914-8.036-17.95-17.95-17.95H17.95
+					C8.035,23.916,0,31.952,0,41.866v63.813C0,115.593,8.035,123.629,17.95,123.629z"/>
+				<path d="M525.732,215.282c-10.098-13.292-24.988-24.223-44.676-32.791c-19.688-8.562-41.42-12.846-65.197-12.846
+					c-48.268,0-89.168,18.421-122.699,55.27c-6.672,7.332-11.523,5.729-11.523-4.186V196.8c0-9.915-8.037-17.95-17.951-17.95h-64.192
+					c-9.915,0-17.95,8.035-17.95,17.95v314.103c0,9.914,8.036,17.951,17.95,17.951h71.861c9.915,0,17.95-8.037,17.95-17.951V401.666
+					c0-45.508,2.748-76.701,8.244-93.574c5.494-16.873,15.66-30.422,30.488-40.649c14.83-10.227,31.574-15.343,50.24-15.343
+					c14.572,0,27.037,3.58,37.393,10.741c10.355,7.16,17.834,17.19,22.436,30.104c4.604,12.912,6.904,41.354,6.904,85.33v132.627
+					c0,9.914,8.035,17.951,17.949,17.951h71.861c9.914,0,17.949-8.037,17.949-17.951V333.02c0-31.445-1.982-55.607-5.941-72.48
+					S535.836,228.581,525.732,215.282z"/>
+			</g>
+		</symbol>
+
+	</svg>
+
+
+
+
+<!-- Header  -->
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+
+				<div class="header__logo">StartUp</div>
+
+				<nav class="nav" id="nav">
+					<a class="nav__links" href="#" data-scroll="#intro">home</a>
+					<a class="nav__links" href="#" data-scroll="#services">services</a>
+					<a class="nav__links" href="#" data-scroll="#about">about</a>
+					<a class="nav__links" href="#" data-scroll="#works">works</a>
+					<a class="nav__links" href="#" data-scroll="#blog">blog</a>
+					<a class="nav__links" href="#" data-scroll="#clients">clients</a>
+					<a class="nav__links" href="#" data-scroll="#contacts">contact</a>
+				</nav>
+
+				<button class="burger" type="button" id="navToggle">
+					<span class="burger__item">Menu</span>
+				</button>
+
+			</div>
+		</div>
+	</header>
+
+
+<!-- Intro -->
+	<div class="intro" id="intro">
+		<div class="container">
+			<div class="intro__inner">
+				<div class="intro__content">
+					<h1 class="intro__title">Welcome to STARTUP</h1>
+					<h2 class="into__subtitle">your favourite creative agency template</h2>
+
+					<a href="#" class="btn btn--intro">get started</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- Services -->
+
+	<div class="services" id="services">
+		<div class="container">
+			<div class="services__inner">
+
+				<div class="block__text">
+					<h2 class="block__title">Services</h2>
+					<p class="block__p">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
+				</div>
+
+				<div class="services__content">
+					
+					<div class="services__item">
+						<div class="s_item__photo">
+							<img src="img/services/services-1.png" alt="">
+						</div>
+						<div class="s_item__title">
+							<h2 class="s_title">Clean Typography</h2>
+							<p class="s_description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
+							</p>
+						</div>
+					</div>
+
+					<div class="services__item">
+						<div class="s_item__photo">
+							<img src="img/services/services-2.png" alt="">
+						</div>
+						<div class="s_item__title">
+							<h2 class="s_title">Clean Typography</h2>
+							<p class="s_description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
+							</p>
+						</div>
+					</div>
+
+					<div class="services__item">
+						<div class="s_item__photo">
+							<img src="img/services/services-3.png" alt="">
+						</div>
+						<div class="s_item__title">
+							<h2 class="s_title">Clean Typography</h2>
+							<p class="s_description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="about" id="about">
+		<div class="container">
+			<div class="about__inner">
+				
+				<div class="block__text">
+					<h2 class="block__title">About us</h2>
+					<p class="block__p">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
+				</div>
+
+				<div class="about__content">
+					<div class="about__text">
+						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eioddel tempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos et accusam et justo dolores et ea rebum. Stet clita kasd gugren, no sea ta sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquan erat. Lorem ipsum dolor sit amet. Lorem ipsum eat.
+					</div>
+					<div class="about__text">
+						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eioddel tempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos et accusam et justo dolores et ea rebum. Stet clita kasd gugren, no sea ta sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquan erat. Lorem ipsum dolor sit amet. Lorem ipsum eat.
+					</div>
+				</div>
+
+
+
+
+				<div class="about__team">
+
+					<div class="about__item">
+						
+						<div class="item__img">
+							<img src="img/team/team-1.jpg" alt="" class="item__photo">
+							<div class="social--grey--bg">
+									
+								<nav class="social">
+									<div class="social__item">
+										<a href="" target="_blank">
+											<img src="img/social/Facebook-Logo.png" alt="">
+										</a>
+									</div>
+									<div class="social__item">
+										<a href="" target="_blank">
+											<img src="img/social/Twitter-Logo.png" alt="">
+										</a>
+									</div>
+									<div class="social__item">
+										<a href="" target="_blank">
+											<img src="img/social/Google-Plus-Logo.png" alt="">
+										</a>
+										</div>
+									<div class="social__item">
+										<a href="" target="_blank">
+											<img src="img/social/fa-linkedin.png" alt="">
+										</a>
+									</div>				
+								</nav>
+							</div> <!-- /.social--grey--bg -->
+						</div>  <!-- /.item__img -->
+
+						<div class="item__text">
+							<h2 class="item__name">Md. Khalil Uddin</h2>
+							<h3 class="item__position">Head of Ideas</h3>
+						</div>
+					</div> <!-- /.about__item  (1) -->
+
+					<div class="about__item">
+						<div class="item__img">
+							<img src="img/team/team-2.jpg" alt="" class="item__photo">
+							<div class="social--grey--bg">
+									
+								<nav class="social">
+									<div class="social__item">
+										<a href="" target="_blank">
+											<img src="img/social/Facebook-Logo.png" alt="">
+										</a>
+									</div>
+									<div class="social__item">
+										<a href="" target="_blank">
+											<img src="img/social/Twitter-Logo.png" alt="">
+										</a>
+									</div>
+									<div class="social__item">
+										<a href="" target="_blank">
+											<img src="img/social/Google-Plus-Logo.png" alt="">
+										</a>
+										</div>
+									<div class="social__item">
+										<a href="" target="_blank">
+											<img src="img/social/fa-linkedin.png" alt="">
+										</a>
+									</div>				
+								</nav>
+							</div> <!-- /.social--grey--bg -->
+						</div>  <!-- /.item__img -->
+
+						<div class="item__text">
+							<h2 class="item__name">Rubel Miah</h2>
+							<h3 class="item__position">Lead WordPress Developer</h3>
+						</div>
+					</div> <!-- /.about__item  (2) -->
+
+					<div class="about__item">
+						<div class="item__img">
+							<img src="img/team/team-3.jpg" alt="" class="item__photo">
+							<div class="social--grey--bg">
+									
+								<nav class="social">
+									<div class="social__item">
+										<a href="" target="_blank"> target="_blank"
+											<img src="img/social/Facebook-Logo.png" alt="">
+										</a>
+									</div>
+									<div class="social__item">
+										<a href="" target="_blank">
+											<img src="img/social/Twitter-Logo.png" alt="">
+										</a>
+									</div>
+									<div class="social__item">
+										<a href="" target="_blank">
+											<img src="img/social/Google-Plus-Logo.png" alt="">
+										</a>
+										</div>
+									<div class="social__item">
+										<a href="" target="_blank">
+											<img src="img/social/fa-linkedin.png" alt="">
+										</a>
+									</div>				
+								</nav>
+							</div> <!-- /.social--grey--bg -->
+						</div>  <!-- /.item__img -->
+
+						<div class="item__text">
+							<h2 class="item__name">Shamim Mia</h2>
+							<h3 class="item__position">Sr. Web Developer</h3>
+						</div>
+					</div> <!-- /.about__item  (3) -->
+
+					<div class="about__item">
+						<div class="item__img">
+							<img src="img/team/team-4.jpg" alt="" class="item__photo">
+							<div class="social--grey--bg">
+									
+								<nav class="social">
+									<div class="social__item">
+										<a href="" target="_blank">
+											<img src="img/social/Facebook-Logo.png" alt="">
+										</a>
+									</div>
+									<div class="social__item">
+										<a href="" target="_blank">
+											<img src="img/social/Twitter-Logo.png" alt="">
+										</a>
+									</div>
+									<div class="social__item">
+										<a href="" target="_blank">
+											<img src="img/social/Google-Plus-Logo.png" alt="">
+										</a>
+										</div>
+									<div class="social__item">
+										<a href="" target="_blank">
+											<img src="img/social/fa-linkedin.png" alt="">
+										</a>
+									</div>				
+								</nav>
+							</div> <!-- /.social--grey--bg -->
+						</div>  <!-- /.item__img -->
+
+						<div class="item__text">
+							<h2 class="item__name">John Doe</h2>
+							<h3 class="item__position">Front-end Developer</h3>
+						</div>
+					</div> <!-- /.about__item  (4) -->
+
+				</div> <!-- /.about__team -->
+			</div>	<!-- ./about__inner	 -->
+		</div>	<!-- /.container -->
+	</div> <!-- /.about -->
+
+
+
+	<!-- Works -->
+
+	<div class="works" id="works">
+		<div class="container">
+			<div class="works__inner">
+				<div class="block__text">
+					<h2 class="block__title">latest works</h2>
+				</div>
+
+				<nav class="works__nav">
+					<a href="#" id="all" name="button">all</a>
+					<a href="#" id="branding" name="button">branding</a>
+					<a href="#" id="design" name="button">design</a>
+					<a href="#" id="development" name="button">development</a>
+					<a href="#" id="strategy" name="button">strategy</a>
+				</nav>
+
+				<div class="works__gallery">
+
+					<div class="works__item design">
+						<img src="img/works/works_01.png" alt="">
+	
+						<div class="works__hover">
+							<div class="works__text">
+								<h2 class="works__title">hair dresser</h2>
+								<p class="works__subtitle">design</p>
+								<a href="#" class="btn btn--works">view</a>
+							</div>
+						</div>
+					</div>
+					<div class="works__item design">
+						<img src="img/works/works_02.png" alt="">
+						<div class="works__hover">
+							<div class="works__text">
+								<h2 class="works__title">bird</h2>
+								<p class="works__subtitle">design</p>
+								<a href="#" class="btn btn--works">view</a>
+							</div>
+						</div>
+					</div>
+					<div class="works__item strategy">
+						<img src="img/works/works_03.png" alt="">
+						<div class="works__hover">
+							<div class="works__text">
+								<h2 class="works__title">finance</h2>
+								<p class="works__subtitle">strategy</p>
+								<a href="#" class="btn btn--works">view</a>
+							</div>
+						</div>
+					</div>
+					<div class="works__item branding">
+						<img src="img/works/works_04.png" alt="">
+						<div class="works__hover">
+							<div class="works__text branding">
+								<h2 class="works__title">camera</h2>
+								<p class="works__subtitle">branding</p>
+								<a href="#" class="btn btn--works">view</a>
+							</div>
+						</div>
+					</div>
+					<div class="works__item design">
+						<img src="img/works/works_05.png" alt="">
+						<div class="works__hover">
+							<div class="works__text">
+								<h2 class="works__title">bicycle</h2>
+								<p class="works__subtitle">design</p>
+								<a href="#" class="btn btn--works">view</a>
+							</div>
+						</div>
+					</div>
+					<div class="works__item strategy">
+						<img src="img/works/works_06.png" alt="">
+						<div class="works__hover">
+							<div class="works__text">
+								<h2 class="works__title">notepad</h2>
+								<p class="works__subtitle">strategy</p>
+								<a href="#" class="btn btn--works">view</a>
+							</div>
+						</div>
+					</div>
+					<div class="works__item branding">
+						<img src="img/works/works_07.png" alt="">
+						<div class="works__hover">
+							<div class="works__text">
+								<h2 class="works__title">development</h2>
+								<p class="works__subtitle">branding</p>
+								<a href="#" class="btn btn--works">view</a>
+							</div>
+						</div>
+					</div>
+					<div class="works__item development">
+						<img src="img/works/works_08.png" alt="">
+						<div class="works__hover">
+							<div class="works__text">
+								<h2 class="works__title">office</h2>
+								<p class="works__subtitle">development</p>
+								<a href="#" class="btn btn--works">view</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="works__item development" >
+						<img src="img/works/works_09.png" alt="">
+						<div class="works__hover">
+							<div class="works__text">
+								<h2 class="works__title">entertainment</h2>
+								<p class="works__subtitle">development</p>
+								<a href="#" class="btn btn--works">view</a>
+							</div>
+						</div>
+					</div>
+					
+					<!-- 				HIDDEN			 -->
+					
+					<div class="works__item strategy hidden">
+						<img src="img\works\works_03.png" alt="">
+						<div class="works__hover">
+							<div class="works__text">
+								<h2 class="works__title">finance</h2>
+								<p class="works__subtitle">strategy</p>
+								<a href="#" class="btn btn--works">view</a>
+							</div>
+						</div>
+					</div>
+					<div class="works__item branding hidden">
+						<img src="img\works\works_04.png" alt="">
+						<div class="works__hover">
+							<div class="works__text branding">
+								<h2 class="works__title">camera</h2>
+								<p class="works__subtitle">branding</p>
+								<a href="#" class="btn btn--works">view</a>
+							</div>
+						</div>
+					</div>
+					<div class="works__item development hidden">
+						<img src="img\works\works_08.png" alt="">
+						<div class="works__hover">
+							<div class="works__text">
+								<h2 class="works__title">office</h2>
+								<p class="works__subtitle">development</p>
+								<a href="#" class="btn btn--works">view</a>
+							</div>
+						</div>
+					</div>
+					
+				</div> <!-- /.works__gallery -->
+				
+				<div class="button" id="button__show">
+					<div class="button__block">load more</div>
+				</div>
+
+			</div> <!-- .works__inner -->
+		</div>  <!-- /.container -->
+	</div>  <!-- /.works -->
+	
+
+	<!-- Get in Touch -->
+
+	<div class="touch__block">
+		<div class="container">
+			<div class="touch__inner">
+				<div class="touch__title">
+					<h2>do you like <span class="uppercase">our work</span> so far?</h2>
+					<h2>let's talk about <span class="uppercase">your project</span>!</h2>
+				</div>
+				<a href="#" class="btn btn--touch">get in touch</a>
+
+			</div>
+		</div>
+	</div>
+		
+
+
+
+	<!-- Blog -->
+
+	<div class="blog" id="blog">
+		<div class="container">
+			<div class="blog__inner">
+				<div class="block__text">
+					<h2 class="block__title">Recent blog posts</h2>
+					<p class="block__p">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
+				</div>
+				
+				<div class="blog__item__container">
+					<div class="blog__item">
+						<div class="blog__photo">
+							<img src="img/blog/blog-1.jpg" alt="">
+						</div>
+						<div class="blog__info">
+							<div class="blog__header">
+								<div class="blog__date">
+									<span id="date">18</span><br>
+									OCT
+								</div>
+								<div class="blog__main__Title">
+									<div class="blog__title">Startup ideas needs to be funded </div>
+									<div class="blog__author">
+										By <span class="red">Khalil</span> Uddin in <span class="red">Development</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="blog__text">
+								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam </p> <br>
+								<p class="blog__hidden_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ducimus rerum itaque numquam saepe obcaecati nulla, ullam quas! Corporis corrupti maiores harum perferendis fugiat at dolorem rem pariatur est hic!</p>
+							</div>
+
+							<div class="button__blog_1">
+								<a href="" class="btn btn--blog-1">Read More</a>
+							</div>
+						</div> <!-- /.blog__info -->
+					</div> <!-- /.blog__item -->
+					
+					<hr>
+
+					<div class="blog__item">
+						<div class="blog__photo">
+							<img src="img/blog/blog-2.jpg" alt="">
+						</div>
+						<div class="blog__info">
+							<div class="blog__header">
+								<div class="blog__date">
+									<span id="date">18</span><br>
+									OCT
+								</div>
+								<div class="blog__main__Title">
+									<div class="blog__title">User Interface Designing Elements</div>
+									<div class="blog__author">
+										By <span class="red">Khalil</span> Uddin in <span class="red">Development</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="blog__text">
+								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam </p> <br>
+								<p class="blog__hidden_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ducimus rerum itaque numquam saepe obcaecati nulla, ullam quas! Corporis corrupti maiores harum perferendis fugiat at dolorem rem pariatur est hic!</p>
+							</div>
+
+							<div class="button__blog_2">
+								<a href="" class="btn btn--blog-2">Read More</a>
+							</div>
+						</div> <!-- /.blog__info -->
+					</div>  <!-- /.blog__item -->
+				</div> <!-- /.blog__item__container -->
+
+
+			</div>  <!-- /.blog__inner -->
+		</div>  <!-- /.container -->
+	</div>  <!-- /.blog -->
+	
+		
+
+	<!-- 	Clients	 -->
+	<div class="clients" id="clients">
+		<div class="container">
+			<div class="clients__inner">
+				<div class="clients__logo">
+					<img src="img/clients/clients_1.png" alt="">
+					<img src="img/clients/clients_2.png" alt="">
+					<img src="img/clients/clients_3.png" alt="">
+					<img src="img/clients/clients_4.png" alt="">
+					<img src="img/clients/clients_5.png" alt="">
+				</div>
+				<div class="clients__quotes" id="clients__quotes">
+
+					<div class="slick__item">
+						<div class="quotes__item">
+							<div class="quotes__text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, nobis, illum. Veritatis ullam dolorum facere maiores tempora minus placeat animi."
+							</div>
+							<div class="quotes__author">John Doe, Google Inc.</div>
+						</div>
+					</div>
+
+					<div class="slick__item">
+						<div class="quotes__item">
+							<div class="quotes__text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quidem deserunt quis, obcaecati, alias dolorum tempora aspernatur nulla omnis voluptatem. Praesentium nihil, doloremque sed."
+							</div>
+							<div class="quotes__author">Steve Jobs, Apple.</div>
+						</div>
+					</div>
+
+					<div class="slick__item">
+						<div class="quotes__item">
+							<div class="quotes__text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia architecto repudiandae quia nisi fuga fugit quibusdam facere ut est mollitia suscipit in ex porro dolorem possimus error, ullam ipsam assumenda."
+							</div>
+							<div class="quotes__author">Bill Gates, Microsoft.</div>
+						</div>					
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	
+	<!-- Contacts -->
+
+	<div class="contacts" id="contacts">
+		<div class="container">
+			<div class="contacts__inner">
+				<div class="block__text">
+					<h2 class="block__title">Get in touch</h2>
+					<p class="block__p">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
+				</div>
+				
+				<div class="contacts__wrapper">
+					<div class="contacts__info__wrapper">
+						<div class="contacts__info">
+							<div class="contacts__info_1">
+								<div class="contacts__icon">
+									<img src="img/contacts/contacts_1.png" alt="">
+								</div>
+								<div class="contacts__title">Address</div>
+							</div>
+							<div class="contacts__info_2">
+								<address><p class="contacts__text">
+									312, 7th Ave, New York<br>NY 101200, United States of America
+								</p></address>
+							</div>
+						</div>
+
+
+						<div class="contacts__info">
+							<div class="contacts__info_1">
+								<div class="contacts__icon">
+									<img src="img/contacts/contacts_2.png" alt="">
+								</div>
+								<div class="contacts__title">Hotline (24X7)</div>
+							</div>
+							<div class="contacts__info_2">
+								<p class="contacts__text">
+									+65 0052 300, +65 88251 210<br>
+									+88 01723 511 340
+								</p>
+							</div>
+						</div>
+
+
+						<div class="contacts__info">
+							<div class="contacts__info_1">
+								<div class="contacts__icon">
+									<img src="img/contacts/contacts_3.png" alt="">
+								</div>
+								<div class="contacts__title">E-mail</div>
+							</div>
+							<div class="contacts__info_2">
+								<p class="contacts__text">
+									koliahnidenko@gamil.com<br>
+									nikolzy@gmail.com
+								</p>
+							</div>
+						</div>
+					</div> <!-- /.contacts__info__wrapper -->
+
+
+					<div class="contacts__form__wrapper">
+						<form action="#" name="newForm" method="post">
+							<div class="contacts__form">
+								<input type="text" value="Name">
+			 					<input type="email-address" value="your e-mail">
+			 					<input type="text" value="your subject">
+			 					<input type="text" value="company name">
+			 					<textarea name="text">write your message</textarea>
+							</div>
+						</form>
+
+						<div class="contacts__button">
+							<div class="submit__button">
+				 				<input type="submit" value="send message">
+				 			</div>
+				 			<div class="contacts__information"><span class="red">*</span> We’ll contact you as as possible. We don’t reply on Monday.</div>
+						</div>
+					</div> <!-- /.contacts__form__wrapper -->
+				</div> <!-- /.contacts__wrapper -->
+
+
+			</div> <!-- /.contacts__inner -->
+		</div> <!-- /.container -->
+	</div> <!-- /.contacts -->
+
+		
+		
+	<!--  Footer  -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__social">
+
+					<div class="footer__icon">
+						<a href="#" class="footer__item" target="_blank">
+							<svg class="footer__social__icon">
+								<use xlink:href="#twitter"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="footer__icon">
+						<a href="#" class="footer__item" target="_blank">
+							<svg class="footer__social__icon">
+								<use xlink:href="#vkontakte"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="footer__icon">
+						<a href="#" class="footer__item" target="_blank">
+							<svg class="footer__social__icon">
+								<use xlink:href="#youtube"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="footer__icon">
+						<a href="#" class="footer__item" target="_blank">
+							<svg class="footer__social__icon">
+								<use xlink:href="#linkedin"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="footer__copyrigth">© 2019 Startup, Made by @nikolzy</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="main.js"></script>
+
+	
+</body>
+</html>
